@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:focal/common/styles/styles.dart';
+import 'package:focal/features/home/pages/home_page.dart';
 import 'package:focal/features/home/widgets/header/header.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,7 +21,8 @@ class HomeScreen extends StatelessWidget {
               child: Column(
             children: [
               Header(),
-              Divider(height: 0.5, color: AppColors.green100)
+              Divider(height: 0.5, color: AppColors.green100),
+              HomePage()
             ],
           ))),
     );
