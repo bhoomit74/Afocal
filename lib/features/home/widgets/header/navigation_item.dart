@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:focal/common/constants/app_constants.dart';
 import 'package:focal/common/styles/styles.dart';
 
 class NavigationItem extends StatelessWidget {
@@ -12,7 +13,7 @@ class NavigationItem extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(label, style: AppTextStyle.bodyMedium()),
-        const SizedBox(width: 8),
+        const SizedBox(width: AppConstants.smallPadding),
         const Icon(
           Icons.keyboard_arrow_down_rounded,
           color: AppColors.secondaryColor,
