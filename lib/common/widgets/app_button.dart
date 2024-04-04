@@ -16,7 +16,9 @@ class AppButton extends StatelessWidget {
       required this.onPressed,
       this.textColor = AppColors.white,
       this.buttonColor = AppColors.secondaryColor,
-      this.padding = const EdgeInsets.all(AppConstants.mediumPadding),
+      this.padding = const EdgeInsets.symmetric(
+          horizontal: AppConstants.defaultPadding,
+          vertical: AppConstants.mediumPadding),
       this.borderRadius = AppConstants.buttonBorderRadius});
 
   @override
@@ -27,7 +29,7 @@ class AppButton extends StatelessWidget {
       padding: padding,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(borderRadius)),
-      child: Text(text, style: AppTextStyle.body(color: textColor)),
+      child: Text(text, style: AppTextStyle.subtitle(color: textColor)),
     );
   }
 }
