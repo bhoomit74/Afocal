@@ -24,7 +24,7 @@ class AppTextStyle {
   static TextStyle body({Color color = AppColors.secondaryColor}) {
     return TextStyle(
         color: color,
-        fontSize: 16,
+        fontSize: 20,
         height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w400).fontFamily);
   }
@@ -32,7 +32,7 @@ class AppTextStyle {
   static TextStyle bodyMedium({Color color = AppColors.secondaryColor}) {
     return TextStyle(
         color: color,
-        fontSize: 16,
+        fontSize: 20,
         height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w600).fontFamily);
   }
@@ -40,7 +40,7 @@ class AppTextStyle {
   static TextStyle bodyBold({Color color = AppColors.secondaryColor}) {
     return TextStyle(
         color: color,
-        fontSize: 16,
+        fontSize: 20,
         height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.bold).fontFamily);
   }
