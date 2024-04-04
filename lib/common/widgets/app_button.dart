@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:focal/common/constants/app_constants.dart';
 import 'package:focal/common/styles/app_colors.dart';
 import 'package:focal/common/styles/app_text_style.dart';
 
@@ -15,8 +16,8 @@ class AppButton extends StatelessWidget {
       required this.onPressed,
       this.textColor = AppColors.white,
       this.buttonColor = AppColors.secondaryColor,
-      this.padding = const EdgeInsets.all(24),
-      this.borderRadius = 32});
+      this.padding = const EdgeInsets.all(AppConstants.mediumPadding),
+      this.borderRadius = AppConstants.buttonBorderRadius});
 
   @override
   Widget build(BuildContext context) {
