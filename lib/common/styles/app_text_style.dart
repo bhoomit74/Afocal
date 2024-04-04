@@ -25,7 +25,6 @@ class AppTextStyle {
     return TextStyle(
         color: color,
         fontSize: 20,
-        height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w400).fontFamily);
   }
 
@@ -33,7 +32,6 @@ class AppTextStyle {
     return TextStyle(
         color: color,
         fontSize: 20,
-        height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w600).fontFamily);
   }
 
@@ -41,7 +39,6 @@ class AppTextStyle {
     return TextStyle(
         color: color,
         fontSize: 20,
-        height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.bold).fontFamily);
   }
 
@@ -49,7 +46,6 @@ class AppTextStyle {
     return TextStyle(
         color: color,
         fontSize: 16,
-        height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w400).fontFamily);
   }
 
@@ -57,7 +53,6 @@ class AppTextStyle {
     return TextStyle(
         color: color,
         fontSize: 16,
-        height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w600).fontFamily);
   }
 
@@ -65,7 +60,6 @@ class AppTextStyle {
     return TextStyle(
         color: color,
         fontSize: 16,
-        height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.bold).fontFamily);
   }
 }
