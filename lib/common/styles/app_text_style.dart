@@ -21,30 +21,27 @@ class AppTextStyle {
             GoogleFonts.dmSerifText(fontWeight: FontWeight.bold).fontFamily);
   }
 
-  static TextStyle body() {
+  static TextStyle body({Color color = AppColors.secondaryColor}) {
     return TextStyle(
-        color: AppColors.secondaryColor,
+        color: color,
         fontSize: 16,
         height: 1,
-        fontFamily:
-            GoogleFonts.dmSerifText(fontWeight: FontWeight.w300).fontFamily);
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w400).fontFamily);
   }
 
-  static TextStyle bodyMedium() {
+  static TextStyle bodyMedium({Color color = AppColors.secondaryColor}) {
     return TextStyle(
-        color: AppColors.secondaryColor,
+        color: color,
         fontSize: 16,
         height: 1,
-        fontFamily:
-            GoogleFonts.dmSerifText(fontWeight: FontWeight.w600).fontFamily);
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w600).fontFamily);
   }
 
-  static TextStyle bodyBold() {
+  static TextStyle bodyBold({Color color = AppColors.secondaryColor}) {
     return TextStyle(
-        color: AppColors.secondaryColor,
+        color: color,
         fontSize: 16,
         height: 1,
-        fontFamily:
-            GoogleFonts.dmSerifText(fontWeight: FontWeight.bold).fontFamily);
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.bold).fontFamily);
   }
 }
