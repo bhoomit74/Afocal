@@ -44,4 +44,28 @@ class AppTextStyle {
         height: 1,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.bold).fontFamily);
   }
+
+  static TextStyle subtitle({Color color = AppColors.secondaryColor}) {
+    return TextStyle(
+        color: color,
+        fontSize: 16,
+        height: 1,
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w400).fontFamily);
+  }
+
+  static TextStyle subtitleMedium({Color color = AppColors.secondaryColor}) {
+    return TextStyle(
+        color: color,
+        fontSize: 16,
+        height: 1,
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w600).fontFamily);
+  }
+
+  static TextStyle subtitleBold({Color color = AppColors.secondaryColor}) {
+    return TextStyle(
+        color: color,
+        fontSize: 16,
+        height: 1,
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.bold).fontFamily);
+  }
 }
