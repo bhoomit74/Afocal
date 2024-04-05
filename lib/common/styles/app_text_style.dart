@@ -62,4 +62,25 @@ class AppTextStyle {
         fontSize: 16,
         fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.bold).fontFamily);
   }
+
+  static TextStyle caption({Color color = AppColors.secondaryColor}) {
+    return TextStyle(
+        color: color,
+        fontSize: 14,
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w400).fontFamily);
+  }
+
+  static TextStyle captionMedium({Color color = AppColors.secondaryColor}) {
+    return TextStyle(
+        color: color,
+        fontSize: 14,
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w600).fontFamily);
+  }
+
+  static TextStyle captionBold({Color color = AppColors.secondaryColor}) {
+    return TextStyle(
+        color: color,
+        fontSize: 14,
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.bold).fontFamily);
+  }
 }

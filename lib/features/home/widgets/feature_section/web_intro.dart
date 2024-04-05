@@ -1,9 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:focal/common/constants/app_constants.dart';
-import 'package:focal/common/styles/app_text_style.dart';
+import 'package:focal/common/styles/styles.dart';
 import 'package:focal/common/widgets/app_button.dart';
 import 'package:focal/common/widgets/app_outline_button.dart';
+import 'package:focal/features/home/widgets/feature_section/feature_image_list.dart';
+import 'package:focal/features/home/widgets/feature_section/rating_view.dart';
 
 class WebIntro extends StatelessWidget {
   const WebIntro({super.key});
@@ -11,9 +12,10 @@ class WebIntro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Flexible(
-          flex: 2,
+          flex: 3,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,16 +37,15 @@ class WebIntro extends StatelessWidget {
                   const SizedBox(width: AppConstants.smallPadding),
                   AppOutlineButton(text: "Use Your Benefits", onPressed: () {}),
                 ],
-              )
+              ),
+              const SizedBox(height: AppConstants.defaultPadding),
+              const RatingView()
             ],
           ),
         ),
-        Flexible(
-          flex: 3,
-          child: ListView(
-            shrinkWrap: true,
-            children: [Text("list")],
-          ),
+        const Flexible(
+          flex: 4,
+          child: FeatureImageList(),
         )
       ],
     );

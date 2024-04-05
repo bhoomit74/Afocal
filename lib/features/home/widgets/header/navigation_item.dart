@@ -12,7 +12,7 @@ class NavigationItem extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text(label, style: AppTextStyle.bodyMedium()),
+        Text(label, style: AppTextStyle.body()),
         const SizedBox(width: AppConstants.smallPadding),
         const Icon(
           Icons.keyboard_arrow_down_rounded,
