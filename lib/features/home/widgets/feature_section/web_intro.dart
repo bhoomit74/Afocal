@@ -22,23 +22,23 @@ class WebIntro extends StatelessWidget {
             children: [
               Text("Find your perfect eyewear look",
                   style: AppTextStyle.title1()),
-              const SizedBox(height: AppConstants.defaultPadding),
+              SizedBox(height: AppConstants.defaultPadding),
               Padding(
-                padding: const EdgeInsets.only(
-                    right: AppConstants.defaultPadding * 2),
+                padding:
+                    EdgeInsets.only(right: AppConstants.defaultPadding * 2),
                 child: Text(
                     "We are all about finding you that one perfect pair, Experience the different a perfect pair makes, Let's find yours together.",
                     style: AppTextStyle.subtitle()),
               ),
-              const SizedBox(height: AppConstants.defaultPadding),
+              SizedBox(height: AppConstants.defaultPadding),
               Row(
                 children: [
                   AppButton(text: "Explore shop", onPressed: () {}),
-                  const SizedBox(width: AppConstants.smallPadding),
+                  SizedBox(width: AppConstants.smallPadding),
                   AppOutlineButton(text: "Use Your Benefits", onPressed: () {}),
                 ],
               ),
-              const SizedBox(height: AppConstants.defaultPadding),
+              SizedBox(height: AppConstants.defaultPadding),
               const RatingView()
             ],
           ),

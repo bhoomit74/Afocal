@@ -8,17 +8,17 @@ class AppNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        NavigationItem(label: "Eyeglasses"),
+        const NavigationItem(label: "Eyeglasses"),
         SizedBox(width: AppConstants.defaultPadding),
-        NavigationItem(label: "Sunglasses"),
+        const NavigationItem(label: "Sunglasses"),
         SizedBox(width: AppConstants.defaultPadding),
-        NavigationItem(label: "Brands"),
+        const NavigationItem(label: "Brands"),
         SizedBox(width: AppConstants.defaultPadding),
-        NavigationItem(label: "About"),
+        const NavigationItem(label: "About"),
       ],
     );
   }

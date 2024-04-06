@@ -8,27 +8,29 @@ class AppButton extends StatelessWidget {
   final Function() onPressed;
   final Color buttonColor;
   final Color textColor;
-  final EdgeInsets padding;
-  final double borderRadius;
+  final EdgeInsets? padding;
+  final double? borderRadius;
   const AppButton(
       {super.key,
       required this.text,
       required this.onPressed,
       this.textColor = AppColors.white,
       this.buttonColor = AppColors.secondaryColor,
-      this.padding = const EdgeInsets.symmetric(
-          horizontal: AppConstants.defaultPadding,
-          vertical: AppConstants.mediumPadding),
-      this.borderRadius = AppConstants.buttonBorderRadius});
+      this.borderRadius,
+      this.padding});
 
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: onPressed,
       color: buttonColor,
-      padding: padding,
+      padding: padding ??
+          EdgeInsets.symmetric(
+              horizontal: AppConstants.defaultPadding,
+              vertical: AppConstants.mediumPadding),
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius)),
+          borderRadius: BorderRadius.circular(
+              borderRadius ?? AppConstants.buttonBorderRadius)),
       child: Text(text, style: AppTextStyle.subtitle(color: textColor)),
     );
   }

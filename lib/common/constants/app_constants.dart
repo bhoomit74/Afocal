@@ -1,6 +1,8 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class AppConstants {
-  static const double defaultPadding = 40;
-  static const double mediumPadding = 20;
-  static const double smallPadding = 10;
+  static double defaultPadding = 56.r;
+  static double mediumPadding = 28.r;
+  static double smallPadding = 14.r;
   static const double buttonBorderRadius = 32;
 }

@@ -9,7 +9,7 @@ class HomeActionMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(
+      padding: EdgeInsets.symmetric(
           horizontal: AppConstants.mediumPadding,
           vertical: AppConstants.smallPadding),
       decoration: BoxDecoration(
@@ -23,7 +23,7 @@ class HomeActionMenu extends StatelessWidget {
           children: [
             Text("Sign in",
                 style: AppTextStyle.subtitle(color: AppColors.white)),
-            const VerticalDivider(
+            VerticalDivider(
               width: AppConstants.mediumPadding,
               color: AppColors.bgColor,
               thickness: 0.1,
@@ -33,7 +33,7 @@ class HomeActionMenu extends StatelessWidget {
               color: AppColors.white,
               size: 24,
             ),
-            const VerticalDivider(
+            VerticalDivider(
               color: AppColors.bgColor,
               width: AppConstants.mediumPadding,
               thickness: 0.1,

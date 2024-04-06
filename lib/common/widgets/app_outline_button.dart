@@ -8,8 +8,8 @@ class AppOutlineButton extends StatelessWidget {
   final Function() onPressed;
   final Color textColor;
   final Color borderColor;
-  final EdgeInsets padding;
-  final double borderRadius;
+  final EdgeInsets? padding;
+  final double? borderRadius;
   final double borderWidth;
   const AppOutlineButton(
       {super.key,
@@ -17,10 +17,8 @@ class AppOutlineButton extends StatelessWidget {
       required this.onPressed,
       this.textColor = AppColors.secondaryColor,
       this.borderColor = AppColors.secondaryColor,
-      this.padding = const EdgeInsets.symmetric(
-          horizontal: AppConstants.defaultPadding,
-          vertical: AppConstants.mediumPadding),
-      this.borderRadius = AppConstants.buttonBorderRadius,
+      this.padding,
+      this.borderRadius,
       this.borderWidth = 1});
 
   @override
@@ -29,10 +27,14 @@ class AppOutlineButton extends StatelessWidget {
       onPressed: onPressed,
       color: AppColors.white,
       elevation: 0,
-      padding: padding,
+      padding: padding ??
+          EdgeInsets.symmetric(
+              horizontal: AppConstants.defaultPadding,
+              vertical: AppConstants.mediumPadding),
       shape: RoundedRectangleBorder(
           side: BorderSide(color: borderColor, width: borderWidth),
-          borderRadius: BorderRadius.circular(borderRadius)),
+          borderRadius: BorderRadius.circular(
+              borderRadius ?? AppConstants.buttonBorderRadius)),
       child: Text(text, style: AppTextStyle.subtitle(color: textColor)),
     );
   }

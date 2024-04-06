@@ -48,7 +48,7 @@ class RatingView extends StatelessWidget {
             )
           ],
         ),
-        const SizedBox(height: AppConstants.smallPadding),
+        SizedBox(height: AppConstants.smallPadding),
         IntrinsicHeight(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -59,13 +59,13 @@ class RatingView extends StatelessWidget {
                 "Trustpilot",
                 style: AppTextStyle.captionBold(),
               ),
-              const SizedBox(width: AppConstants.smallPadding / 2),
+              SizedBox(width: AppConstants.smallPadding / 2),
               const VerticalDivider(
                 color: AppColors.bgColor,
                 width: 1,
                 thickness: 1,
               ),
-              const SizedBox(width: AppConstants.smallPadding / 2),
+              SizedBox(width: AppConstants.smallPadding / 2),
               const Icon(Icons.star_purple500_outlined,
                   color: AppColors.greenColor),
               const Icon(Icons.star_purple500_outlined,
@@ -75,15 +75,15 @@ class RatingView extends StatelessWidget {
               const Icon(Icons.star_purple500_outlined,
                   color: AppColors.greenColor),
               const Icon(Icons.star_half_outlined, color: AppColors.greenColor),
-              const SizedBox(width: AppConstants.smallPadding),
+              SizedBox(width: AppConstants.smallPadding),
               Text("15,008", style: AppTextStyle.subtitleMedium()),
-              const SizedBox(width: AppConstants.smallPadding / 2),
+              SizedBox(width: AppConstants.smallPadding / 2),
               const VerticalDivider(
                 color: AppColors.bgColor,
                 width: 1,
                 thickness: 1,
               ),
-              const SizedBox(width: AppConstants.smallPadding / 2),
+              SizedBox(width: AppConstants.smallPadding / 2),
               Text("Excellent", style: AppTextStyle.subtitleBold()),
             ],
           ),
