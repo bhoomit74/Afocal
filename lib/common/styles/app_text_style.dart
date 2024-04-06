@@ -68,14 +68,14 @@ class AppTextStyle {
     return TextStyle(
         color: color,
         fontSize: 14.sp,
-        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w400).fontFamily);
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w300).fontFamily);
   }
 
   static TextStyle captionMedium({Color color = AppColors.secondaryColor}) {
     return TextStyle(
         color: color,
         fontSize: 14.sp,
-        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w600).fontFamily);
+        fontFamily: GoogleFonts.roboto(fontWeight: FontWeight.w500).fontFamily);
   }
 
   static TextStyle captionBold({Color color = AppColors.secondaryColor}) {

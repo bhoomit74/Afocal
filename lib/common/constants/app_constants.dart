@@ -5,4 +5,5 @@ class AppConstants {
   static double mediumPadding = 28.r;
   static double smallPadding = 14.r;
   static const double buttonBorderRadius = 32;
+  static const double cardBorderRadius = 16;
 }
