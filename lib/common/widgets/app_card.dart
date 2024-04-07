@@ -6,6 +6,7 @@ class AppCard extends StatelessWidget {
   final double? height;
   final double? width;
   final Color cardColor;
+  final Gradient? cardGradient;
   final Color borderColor;
   final BorderRadius? borderRadius;
   final Widget? child;
@@ -15,6 +16,7 @@ class AppCard extends StatelessWidget {
       this.height,
       this.width,
       this.cardColor = AppColors.cardBgColor,
+      this.cardGradient,
       this.borderColor = AppColors.transparent,
       this.borderRadius,
       this.child,
@@ -27,6 +29,7 @@ class AppCard extends StatelessWidget {
       width: width,
       decoration: BoxDecoration(
           color: cardColor,
+          gradient: cardGradient,
           boxShadow: [
             BoxShadow(
                 color: Colors.grey.shade200, spreadRadius: 1, blurRadius: 5)
