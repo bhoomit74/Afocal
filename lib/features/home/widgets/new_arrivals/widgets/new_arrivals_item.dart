@@ -4,7 +4,8 @@ import 'package:focal/common/widgets/app_card.dart';
 import 'package:focal/features/home/widgets/new_arrivals/widgets/product_tag.dart';
 
 class NewArrivalsItem extends StatelessWidget {
-  const NewArrivalsItem({super.key});
+  final String imgUrl;
+  const NewArrivalsItem({super.key, required this.imgUrl});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class NewArrivalsItem extends StatelessWidget {
               width: 300,
               height: 200,
               fit: BoxFit.cover,
-              "assets/img.png",
+              imgUrl,
             ),
             const Spacer(),
             Row(

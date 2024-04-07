@@ -40,15 +40,18 @@ class NewArrivals extends StatelessWidget {
                   AppColors.white
                 ]).createShader(bounds),
             child: ListView.separated(
-              itemCount: 5,
+              itemCount: AppConstants.newArrivals.length,
               scrollDirection: Axis.horizontal,
               shrinkWrap: true,
               itemBuilder: (context, index) {
                 return Padding(
                   padding: EdgeInsets.only(
                       left: index == 0 ? AppConstants.defaultPadding * 2 : 0,
-                      right: index == 4 ? AppConstants.defaultPadding * 2 : 0),
-                  child: const NewArrivalsItem(),
+                      right: index == AppConstants.newArrivals.length - 1
+                          ? AppConstants.defaultPadding * 2
+                          : 0),
+                  child:
+                      NewArrivalsItem(imgUrl: AppConstants.newArrivals[index]),
                 );
               },
               separatorBuilder: (context, index) {

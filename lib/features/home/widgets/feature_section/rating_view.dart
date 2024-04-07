@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:focal/common/constants/app_constants.dart';
+import 'package:focal/common/constants/app_images.dart';
 import 'package:focal/common/styles/styles.dart';
 import 'package:focal/common/widgets/rounded_network_image.dart';
 
@@ -17,8 +18,7 @@ class RatingView extends StatelessWidget {
                   borderRadius: BorderRadius.circular(48),
                   border: Border.all(color: AppColors.white)),
               child: const RoundedNetworkImage(
-                imageUrl:
-                    "https://media.istockphoto.com/id/1048706896/photo/young-man-with-eyeglasses.jpg?s=1024x1024&w=is&k=20&c=v3g4P7Bw0G4ZVhIDS_13NLFaOWmOyx0euVnNCDZKS1Y=",
+                imageUrl: AppImages.model1,
                 fit: BoxFit.cover,
                 width: 48,
                 height: 48,
@@ -32,8 +32,7 @@ class RatingView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(48),
                       border: Border.all(color: AppColors.white)),
                   child: const RoundedNetworkImage(
-                    imageUrl:
-                        "https://media.istockphoto.com/id/1391504868/photo/trendy-young-bearded-man-looking-at-camera-in-white-studio.jpg?s=1024x1024&w=is&k=20&c=aEeuAg0-NVNZFBQnnl61WSW2ZHbYCbaSPts53LCeWPA=",
+                    imageUrl: AppImages.model3,
                     width: 48,
                     height: 48,
                     borderRadius: 48,

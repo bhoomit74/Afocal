@@ -4,6 +4,7 @@ import 'package:focal/common/styles/styles.dart';
 import 'package:focal/features/home/pages/home_page.dart';
 import 'package:focal/features/home/widgets/header/header.dart';
 import 'package:focal/features/home/widgets/new_arrivals/new_arrivals.dart';
+import 'package:focal/features/home/widgets/personalized_eyecare/personalized_eye_care.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -29,7 +30,9 @@ class HomeScreen extends StatelessWidget {
                 const Divider(height: 0.5, color: AppColors.green100),
                 const HomePage(),
                 SizedBox(height: AppConstants.defaultPadding),
-                const NewArrivals()
+                const NewArrivals(),
+                SizedBox(height: AppConstants.defaultPadding * 2),
+                const PersonalizedEyeCare(),
               ],
             ),
           ))),
