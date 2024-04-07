@@ -33,6 +33,7 @@ class HomeScreen extends StatelessWidget {
                 const NewArrivals(),
                 SizedBox(height: AppConstants.defaultPadding * 2),
                 const PersonalizedEyeCare(),
+                SizedBox(height: AppConstants.defaultPadding * 2),
               ],
             ),
           ))),
