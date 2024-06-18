@@ -2,15 +2,7 @@
 
 Focal - Your destination for stylish eyewear, offering a curated collection of glasses to enhance your vision and style
 
-## Getting Started
+##Screenshots
+![Screenshot1](https://github.com/bhoomit74/focal/RoGsdCGIeXV.png)
+![Screenshot2](https://github.com/bhoomit74/focal/RoGsdCGIeXV(1).png)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
